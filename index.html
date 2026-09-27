@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SocialConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SocialConnect</h1>
+        <button onclick="goToProfile()">
+    👤 My Profile
+</button>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+
+        <!-- Create Post -->
+        <div class="post-box">
+
+            <h2>Create a Post</h2>
+
+            <textarea
+                id="postContent"
+                placeholder="What's on your mind?"
+                rows="4"
+            ></textarea>
+
+            <button onclick="createPost()">
+                Post
+            </button>
+
+            <p id="postMessage"></p>
+
+        </div>
+
+
+        <!-- Posts -->
+        <div class="posts-section">
+
+            <h2>Recent Posts</h2>
+
+            <div id="postsContainer">
+                Loading posts...
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
